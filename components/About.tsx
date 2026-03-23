@@ -7,7 +7,7 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-12">
           <div>
             <p className="text-lg text-[#6e6e73] leading-relaxed mb-6">
-              Soy Ingeniero Civil Informático egresado de la Universidad Andrés Bello con más de 3 años
+              Soy Ingeniero Civil Informático egresado de la Universidad Andrés Bello con cerca de 3 años
               de experiencia en desarrollo backend y full stack.
             </p>
             <p className="text-lg text-[#6e6e73] leading-relaxed">
