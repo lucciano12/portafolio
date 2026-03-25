@@ -20,7 +20,7 @@ const projects = [
     description: 'Plataforma web responsiva para festival de música con lineup, horarios, galería y compra de boletos. Layout mobile-first con automatización Gulp 4.',
     stack: ['HTML5', 'SCSS', 'JavaScript', 'Gulp 4', 'Bootstrap'],
     github: 'https://github.com/lucciano12/Festival-musica',
-    demo: 'https://festival-musica-lucciano.vercel.app',
+    demo: 'https://festival-musica-lp.vercel.app',
     status: 'done',
   },
   {
