@@ -12,7 +12,7 @@ const projects = [
     description: 'Aplicación web de catálogo musical para búsqueda y exploración de samples. Buscador con ranking de relevancia usando Reactive Forms y RxJS.',
     stack: ['Angular 20', 'TypeScript', 'RxJS', 'SCSS', 'Bootstrap'],
     github: 'https://github.com/lucciano12/Sampler',
-    demo: '',
+    demo: 'https://sampler-lp.vercel.app',
     status: 'wip',
   },
   {
