@@ -1,4 +1,19 @@
-const experience = [
+type ExperienceItem = {
+  company: string
+  role: string
+  period: string
+  description: string
+  tags?: string[]
+}
+
+const experience: ExperienceItem[] = [
+  {
+    company: 'Quantsoft / Proyecto EyeQuant',
+    role: 'Desarrollador Fullstack',
+    period: 'May 2026 – Jul 2026',
+    description: 'Desarrollé y mantuve el dashboard de la plataforma fintech EyeQuant con Next.js, TypeScript y Tailwind CSS, integrando endpoints REST de señales de inversión y Prisma ORM para acceso a datos. Implementé sistema de votación de señales, tooltips interactivos y mejoras responsive. Gestioné almacenamiento en Amazon S3 y despliegue en Vercel con GitFlow. Administré servidores Linux vía SSH en AWS EC2 con procesos automatizados usando pm2. Integré sistema de watchlist con notificaciones condicionales por cambios en portafolios de usuarios.',
+    tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Prisma ORM', 'AWS EC2', 'S3', 'pm2', 'Vercel'],
+  },
   {
     company: 'Agibiz / MetLife Chile',
     role: 'Programador Backend Nivel 3',
@@ -42,6 +57,15 @@ export default function Experience() {
                 <span className="text-sm text-[#6e6e73] mt-1 md:mt-0 shrink-0">{exp.period}</span>
               </div>
               <p className="text-sm text-[#6e6e73] leading-relaxed mt-3">{exp.description}</p>
+              {exp.tags && exp.tags.length > 0 && (
+                <div className="flex flex-wrap gap-2 mt-4">
+                  {exp.tags.map((tech) => (
+                    <span key={tech} className="text-xs bg-[#f5f5f7] border border-[#d2d2d7] text-[#6e6e73] px-2 py-1 rounded-full">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              )}
             </div>
           ))}
         </div>

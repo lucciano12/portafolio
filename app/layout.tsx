@@ -4,7 +4,7 @@ import { Analytics } from '@vercel/analytics/next'
 
 export const metadata: Metadata = {
   title: 'Lucciano Prado — Full Stack Developer',
-  description: 'Portafolio profesional de Lucciano Prado, Ingeniero Civil Informático y Full Stack Developer especializado en NestJS, TypeScript, Angular y React.',
+  description: 'Portafolio profesional de Lucciano Prado, Ingeniero Civil Informático y Full Stack Developer especializado en TypeScript, NestJS, Node.js y React con experiencia en AWS y arquitecturas de microservicios.',
   keywords: ['Full Stack Developer', 'NestJS', 'TypeScript', 'Angular', 'React', 'Chile'],
   authors: [{ name: 'Lucciano Prado' }],
   openGraph: {

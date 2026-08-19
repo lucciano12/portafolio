@@ -5,6 +5,7 @@ const stack = {
     { name: 'PHP', emoji: '🐘' },
     { name: 'Python', emoji: '🐍' },
     { name: 'Spring Boot', emoji: '🍃' },
+    { name: 'Prisma ORM', emoji: '🔺' },
   ],
   Frontend: [
     { name: 'Angular', emoji: '🔴' },
@@ -12,6 +13,7 @@ const stack = {
     { name: 'TypeScript', emoji: '🔷' },
     { name: 'SCSS', emoji: '🎨' },
     { name: 'Tailwind CSS', emoji: '💨' },
+    { name: 'Next.js', emoji: '▲' },
   ],
   'Bases de Datos': [
     { name: 'PostgreSQL', emoji: '🐘' },
@@ -24,6 +26,13 @@ const stack = {
     { name: 'AWS', emoji: '☁️' },
     { name: 'Azure DevOps', emoji: '🔵' },
     { name: 'Git / GitFlow', emoji: '🌿' },
+    { name: 'pm2', emoji: '🔄' },
+    { name: 'Vercel', emoji: '🚀' },
+  ],
+  Herramientas: [
+    { name: 'Swagger', emoji: '📄' },
+    { name: 'Postman', emoji: '📮' },
+    { name: 'Prisma CLI', emoji: '🛠️' },
   ],
 }
 

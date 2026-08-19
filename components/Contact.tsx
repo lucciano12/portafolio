@@ -16,13 +16,22 @@ export default function Contact() {
             <span>prado.lucciano@gmail.com</span>
           </a>
           <a
-            href="https://www.linkedin.com/in/lucciano-prado-estivill-813973156"
+            href="https://www.linkedin.com/in/luccianoprado/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-2 border border-[#d2d2d7] text-[#1d1d1f] px-8 py-4 rounded-full text-sm font-medium hover:border-[#0071e3] hover:text-[#0071e3] transition-colors"
           >
             <span>💼</span>
             <span>LinkedIn</span>
+          </a>
+          <a
+            href="https://github.com/lucciano12"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-2 border border-[#d2d2d7] text-[#1d1d1f] px-8 py-4 rounded-full text-sm font-medium hover:border-[#0071e3] hover:text-[#0071e3] transition-colors"
+          >
+            <span>🐙</span>
+            <span>GitHub</span>
           </a>
         </div>
       </div>

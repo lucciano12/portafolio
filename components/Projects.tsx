@@ -4,6 +4,7 @@ const projects = [
     description: 'Sistema de gestión y generación de etiquetas operativas para negocio gastronómico. Monorepo con API backend NestJS, Dashboard React y PWA móvil con escáner QR.',
     stack: ['NestJS', 'React', 'MongoDB', 'Docker', 'PWA'],
     url: 'https://github.com/lucciano12/Rotulo-digital',
+    demo: null,
     status: 'wip',
   },
   {
@@ -11,6 +12,7 @@ const projects = [
     description: 'Aplicación web de catálogo musical para búsqueda y exploración de samples. Buscador con ranking de relevancia usando Reactive Forms y RxJS.',
     stack: ['Angular 20', 'TypeScript', 'RxJS', 'SCSS', 'Bootstrap'],
     url: 'https://github.com/lucciano12/Sampler',
+    demo: 'https://sampler-lp.vercel.app',
     status: 'wip',
   },
   {
@@ -18,21 +20,8 @@ const projects = [
     description: 'Plataforma web responsiva para festival de música con lineup, horarios, galería y compra de boletos. Layout mobile-first con automatización Gulp 4.',
     stack: ['HTML5', 'SCSS', 'JavaScript', 'Gulp 4', 'Bootstrap'],
     url: 'https://github.com/lucciano12/Festival-musica',
+    demo: 'https://festival-musica-lp.vercel.app',
     status: 'done',
-  },
-  {
-    title: 'Desarrollo PHP Web',
-    description: 'Proyectos de desarrollo web con PHP y MySQL. AppSalon: app de gestión de citas con conexión a BD, endpoints JSON y lógica de negocio.',
-    stack: ['PHP', 'MySQL', 'JavaScript', 'SCSS', 'Gulp'],
-    url: 'https://github.com/lucciano12/desarrollo-php-web',
-    status: 'done',
-  },
-  {
-    title: 'Practica NestJS',
-    description: 'Práctica avanzada de patrones y arquitectura con NestJS. Módulos, controladores, servicios, guards, pipes e integración con bases de datos.',
-    stack: ['NestJS', 'TypeScript', 'Node.js'],
-    url: 'https://github.com/lucciano12/Practica-NestJS',
-    status: 'wip',
   },
 ]
 
@@ -44,11 +33,8 @@ export default function Projects() {
         <div className="w-12 h-1 bg-[#0071e3] mb-10 rounded"></div>
         <div className="grid md:grid-cols-2 gap-6">
           {projects.map((project) => (
-            <a
+            <div
               key={project.title}
-              href={project.url}
-              target="_blank"
-              rel="noopener noreferrer"
               className="group block bg-[#f5f5f7] rounded-2xl p-6 hover:shadow-md transition-shadow"
             >
               <div className="flex justify-between items-start mb-3">
@@ -73,7 +59,27 @@ export default function Projects() {
                   </span>
                 ))}
               </div>
-            </a>
+              <div className="flex flex-wrap gap-3 mt-5">
+                <a
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border border-[#d2d2d7] text-[#1d1d1f] px-4 py-2 rounded-full text-sm font-medium hover:border-[#0071e3] hover:text-[#0071e3] transition-colors"
+                >
+                  GitHub
+                </a>
+                {project.demo && (
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-[#0071e3] text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-[#0077ed] transition-colors"
+                  >
+                    Demo
+                  </a>
+                )}
+              </div>
+            </div>
           ))}
         </div>
       </div>
