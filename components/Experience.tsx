@@ -19,24 +19,28 @@ const experience: ExperienceItem[] = [
     role: 'Programador Backend Nivel 3',
     period: 'Feb 2025 – Jul 2025',
     description: 'Diseñé e implementé servicios RESTful en NestJS migrando lógica desde Oracle PL/SQL a microservicios. Autenticación JWT, documentación Swagger, pruebas en Azure Test Plans y GitFlow.',
+    tags: ['NestJS', 'TypeScript', 'PostgreSQL', 'JWT', 'Swagger', 'Azure DevOps'],
   },
   {
     company: 'CyD Ingeniería',
     role: 'Administrador Informático',
     period: 'May 2024 – Feb 2025',
     description: 'Automaticé migración de datos desde Excel a plataformas de control con Python, mejorando eficiencia operativa un 40%. Implementé fiscalización automatizada de procesos documentales.',
+    tags: ['Python', 'Excel', 'Automatización'],
   },
   {
     company: 'Axioma Ingenieros Consultores',
     role: 'Administrador Informático',
     period: 'Dic 2023 – May 2024',
     description: 'Administré plataformas informáticas y documentales en proyectos de ingeniería civil. Gestión de control documental y trazabilidad de procesos.',
+    tags: ['Gestión documental', 'Plataformas ERP'],
   },
   {
     company: 'IODEV SPA',
     role: 'Desarrollador Backend (Práctica)',
     period: 'Ene 2020 – Dic 2020',
     description: 'Desarrollé APIs REST en Spring Boot para gestión de usuarios con autenticación segura y manejo de datos sensibles.',
+    tags: ['Spring Boot', 'Java', 'REST API', 'Autenticación'],
   },
 ]
 
